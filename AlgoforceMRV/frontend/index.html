@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Distributor Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Server Request Load Distributor</h1>
+        <button id="start-btn" onclick="fireRequests()">Launch 100 Requests</button>
+    </header>
+
+    <div class="container">
+        <!-- Automation Grid -->
+        <div class="section grid-section">
+            <h2>Live Request Automation</h2>
+            <div id="request-grid" class="grid"></div>
+        </div>
+
+        <!-- Result Dump Table -->
+        <div class="section table-section">
+            <h2>Decision Log & Result Dump</h2>
+            <table id="result-table">
+                <thead>
+                    <tr>
+                        <th>Req ID</th>
+                        <th>Workload</th>
+                        <th>Assigned Server</th>
+                        <th>Algorithm Decision Logic</th>
+                        <th>Server Status</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Data dumps here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
